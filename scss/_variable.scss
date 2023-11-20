@@ -1,0 +1,17 @@
+    // -----------colors-----------
+    $yellowb-cr: #FFE145;
+    $yellowd-cr: #B79C10;
+    $yellowl-cr: #FFF7CC;
+
+    $gray-second: #9093A6;
+    $gray-dark: #3F4255;
+    $gray-light: #D4D7E5;
+    $gray-bg: #F2F4FA;
+    // -------------fonts-------------
+    @mixin text($color, $ff, $fw, $fs, $ls) {
+        color: $color;
+        font-family: $ff;
+        font-weight: $fw;
+        font-size: $fs;
+        letter-spacing: $ls;
+    }
