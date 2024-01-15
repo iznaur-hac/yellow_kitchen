@@ -1,274 +1,276 @@
-@import 'variable';
-@import 'reset';
-p{
-    margin-bottom: 0px;
+@import "variable";
+@import "reset";
+p {
+  margin-bottom: 0px;
 }
 
-.nav-menu{
+.me-container {
+  width: 1000px;
+  margin: auto;
+}
+
+.nav-menu {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  &__img {
+    width: 184.05px;
+    height: 24px;
+  }
+  &-items {
     display: flex;
-    padding: 10px;
     align-items: center;
-    &__img{
-        width: 184.05px;
-        height: 24px;
+    margin-left: auto;
+    margin-right: 0px;
+    column-gap: 48px;
+    width: 257px;
+
+    &-login {
+      display: flex;
+      width: 77px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      svg {
+        fill: $gray-second;
+      }
+      &:hover svg {
+        fill: #3f4255;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      &:hover p {
+        color: #3f4255;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      &__text {
+        @include text(#9093a6, "Martel Sans", 700, 16px, 0.5px);
+        width: 55px;
+        height: 20px;
+        margin-bottom: 0px;
+      }
     }
-    &-items{
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        margin-right: 0px;
-        column-gap: 48px;
-        width: 257px;
-        
-        &-login{
-            display: flex;
-            width: 77px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            svg{
-                fill: $gray-second;
-            }
-            &:hover svg{
-                fill: #3F4255;
-                cursor: pointer;
-                transition: all .3s;
-            }
-            &:hover p{
-                color: #3F4255;
-                cursor: pointer;
-                transition: all .3s;
-            }
-            &__text{
-                @include text(#9093A6, 'Martel Sans', 700, 16px, 0.5px);
-                width: 55px;
-                height: 20px;
-                margin-bottom: 0px;
-            }
-        }
-        &-cart{
-            display: flex;
-            width: 36px;
-            height: 24px;
-            align-items: center;
-            &:hover svg{
-                fill: #3F4255;
-                cursor: pointer;
-                transition: all .3s;
-            }
-            &:hover p{
-                color: #3F4255;
-                cursor: pointer;
-                transition: all .3s;
-            }
-            svg{
-                fill: $gray-second;
-            }
-            &__text{
-                @include text(#9093A6, 'Martel Sans', 700, 16px, 0.5px);
-                padding-left: 5px;
-                margin-bottom: 0px;
-            }
-        }
-        &_btn{
-            border: none;
-            background-color: white;
-            padding: 12px;
-            -webkit-box-shadow: 44px 49px 48px -12px rgba(0, 0, 0, 0.2);
-            -moz-box-shadow: 44px 49px 48px -12px rgba(0, 0, 0, 0.2);
-            box-shadow: 44px 49px 48px -12px rgba(0, 0, 0, 0.2);
-            border-radius: 25px;
-        }
+    &-cart {
+      display: flex;
+      width: 36px;
+      height: 24px;
+      align-items: center;
+      &:hover svg {
+        fill: #3f4255;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      &:hover p {
+        color: #3f4255;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      svg {
+        fill: $gray-second;
+      }
+      &__text {
+        @include text(#9093a6, "Martel Sans", 700, 16px, 0.5px);
+        padding-left: 5px;
+        margin-bottom: 0px;
+      }
     }
+    &_btn {
+      border: none;
+      background-color: white;
+      padding: 12px;
+      -webkit-box-shadow: 44px 49px 48px -12px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 44px 49px 48px -12px rgba(0, 0, 0, 0.2);
+      box-shadow: 44px 49px 48px -12px rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+    }
+  }
 }
-.nav-hr{
-    margin: 0px;
-    height: 1px;
-    border-color: $gray-dark;
+.nav-hr {
+  margin: 0px;
+  height: 1px;
+  border-color: $gray-dark;
 }
 
-.main-box{
+.main-box {
+  display: flex;
+  margin-top: 10px;
+  img {
+    max-width: 803px;
+    height: 706px;
+  }
+  .main-head {
+    width: 536px;
+    margin-top: 120px;
+  }
+  &__title {
+    @include text(#3f4255, "Poppins", 300, 54px, 2.9px);
+    line-height: 64px;
+    position: relative;
+  }
+  &-items {
     display: flex;
-    margin-top: 10px;
-    img{
-        max-width: 803px;
-        height: 706px;
+    column-gap: 24px;
+    padding-top: 88px;
+    &__item1 {
+      border-radius: 4px;
+      border: 2px solid $yellowb-cr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:hover p {
+        color: #fff;
+        transition: all 0.3s;
+      }
+      &:hover span {
+        color: #fff;
+        transition: all 0.3s;
+      }
+      &:hover {
+        background-color: #ffe145;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      p {
+        @include text(#3f4255, "Martel Sans", 700, 16px, 0.5px);
+        line-height: 20px;
+        padding: 16px 24px 0px 24px;
+      }
+      span {
+        @include text(#3f4255, "Martel Sans", 400, 12px, normal);
+        line-height: 15px;
+        padding-bottom: 16px;
+      }
     }
-    .main-head{
-        width: 536px;
-        margin-top: 120px;
+    &__item2 {
+      border-radius: 4px;
+      border: 2px solid $yellowb-cr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        @include text(#3f4255, "Martel Sans", 700, 16px, 0.5px);
+        line-height: 20px;
+        padding: 16px 24px 0px 24px;
+      }
+      span {
+        @include text(#3f4255, "Martel Sans", 400, 12px, normal);
+        line-height: 15px;
+        padding-bottom: 16px;
+      }
+      &:hover p {
+        color: #fff;
+        transition: all 0.3s;
+      }
+      &:hover span {
+        color: #fff;
+        transition: all 0.3s;
+      }
+      &:hover {
+        background-color: #ffe145;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
     }
-    &__title{
-        @include text(#3F4255, 'Poppins', 300, 54px,  2.9px);
-        line-height: 64px;
-        position: relative;
-        
-    }
-    &-items{
-        display: flex;
-        column-gap: 24px;
-        padding-top: 88px;
-        &__item1{
-            border-radius: 4px;
-            border: 2px solid $yellowb-cr;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            &:hover p{
-                color: #fff;
-                transition: all .3s;
-            }
-            &:hover span{
-                color: #fff;
-                transition: all .3s;
-            }
-            &:hover{
-                background-color: #FFE145;
-                transition: all .3s;
-                cursor: pointer;
-            }
-            p{
-                @include text(#3F4255, 'Martel Sans', 700, 16px, 0.5px);
-                line-height: 20px;
-                padding: 16px 24px 0px 24px;
-            }
-            span{
-                @include text(#3F4255, 'Martel Sans', 400, 12px, normal);
-                line-height: 15px;
-                padding-bottom: 16px;
-            }
-        }
-        &__item2{
-            border-radius: 4px;
-            border: 2px solid $yellowb-cr;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            p{
-                @include text(#3F4255, 'Martel Sans', 700, 16px, 0.5px);
-                line-height: 20px;
-                padding: 16px 24px 0px 24px;
-            }
-            span{
-                @include text(#3F4255, 'Martel Sans', 400, 12px, normal);
-                line-height: 15px;
-                padding-bottom: 16px;
-            }
-            &:hover p{
-                color: #fff;
-                transition: all .3s;
-            }
-            &:hover span{
-                color: #fff;
-                transition: all .3s;
-            }
-            &:hover{
-                background-color: #FFE145;
-                transition: all .3s;
-                cursor: pointer;
-            }
-        }
-    }
+  }
 }
-.main-block{
-    margin-top: -50px;
-    &-items{
-        -webkit-box-shadow: 17px 18px 15px 0px rgba(34, 60, 80, 0.2);
-        -moz-box-shadow: 17px 18px 15px 0px rgba(34, 60, 80, 0.2);
-        box-shadow: 17px 18px 15px 0px rgba(34, 60, 80, 0.2);
-        padding: 24px 24px 24px 0px;
-        display: flex;
-        column-gap: 46px;
-        max-width: 900px;
-        padding-left: 100px/1440px*100%;
+.main-block {
+  margin-top: -50px;
+  &-items {
+    -webkit-box-shadow: 17px 18px 15px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 17px 18px 15px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 17px 18px 15px 0px rgba(34, 60, 80, 0.2);
+    padding: 24px 24px 24px 0px;
+    display: flex;
+    column-gap: 46px;
+    max-width: 900px;
+    padding-left: 100px/1440px * 100%;
 
-        &__item{
-            display: flex;
-            column-gap: 16px;
-            align-items: center;
-            p{
-                font-family: 'Martel Sans';
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 24px; /* 150% */
-                letter-spacing: 0.5px;
-                color: $gray-dark;
-            }
-        }
+    &__item {
+      display: flex;
+      column-gap: 16px;
+      align-items: center;
+      p {
+        font-family: "Martel Sans";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.5px;
+        color: $gray-dark;
+      }
     }
+  }
 }
-.offcanvas-subtitle{
-    padding-left: 11%;
-    padding-top: -15%;
-    font-family: 'Martel Sans';
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $gray-second;
+.offcanvas-subtitle {
+  padding-left: 11%;
+  padding-top: -15%;
+  font-family: "Martel Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $gray-second;
 }
-.offcanvas-a{
-    font-family: 'Martel Sans';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px; /* 125% */
-    letter-spacing: 0.5px;
-    color: $gray-second;
-    text-decoration: none;
+.offcanvas-a {
+  font-family: "Martel Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.5px;
+  color: $gray-second;
+  text-decoration: none;
 }
-.offcanvas-li{
-    list-style: none;
-    padding-bottom: 5%;
+.offcanvas-li {
+  list-style: none;
+  padding-bottom: 5%;
 }
 
 //  -------------------------------
 
-.restaurants-block{
-    margin-top: 48px;
+.restaurants-block {
+  margin-top: 48px;
 }
-.restaurants{
-    &-body{
-        margin-top: 50px;
-        margin-bottom: 75px;
+.restaurants {
+  &-body {
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      color: $gray-dark;
+      font-family: "Poppins";
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 64px;
+      letter-spacing: 2.88px;
     }
-    &-head{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &__title{
-            color: $gray-dark;
-            font-family: 'Poppins';
-            font-size: 36px;
-            font-weight: 300;
-            line-height: 64px;
-            letter-spacing: 2.88px;
-        }
-        &__btn{
-            width: 120px;
-            height: 48px;
-            padding: 15px 5px;
-            align-items: center;
-            background-color: $gray-bg;
-            font-family: 'Martel Sans';
-            font-size: 16px;
-            font-weight: 700;
-            color: $gray-second;
-            border-radius: 4px;
-        }
+    &__btn {
+      width: 120px;
+      height: 48px;
+      padding: 15px 5px;
+      align-items: center;
+      background-color: $gray-bg;
+      font-family: "Martel Sans";
+      font-size: 16px;
+      font-weight: 700;
+      color: $gray-second;
+      border-radius: 4px;
     }
+  }
 }
-.restaurants__item{
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 4px;
-    box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
-    img{
-        width: 320px;
-    }
+.restaurants__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 4px;
+  box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+  img {
+    width: 320px;
+  }
 }
-
 
 // -----------------------------
-
 
 .slick-prev:before,
 .slick-next:before {
@@ -279,564 +281,569 @@ p{
 .slick-next {
   width: 60px;
   height: 60px;
-  z-index:5;
+  z-index: 5;
 }
 
-.slick-prev,.slick-prev:hover,.slick-prev:focus {
-    left: -30px;
+.slick-prev,
+.slick-prev:hover,
+.slick-prev:focus {
+  left: -30px;
   background: url(../images/icons/button2.svg);
   background-position-x: -8px;
   background-position-y: -5px;
 }
 
-.slick-next,.slick-next:hover,.slick-next:focus {
-    top: 120px;
-    right: -30px;
+.slick-next,
+.slick-next:hover,
+.slick-next:focus {
+  top: 120px;
+  right: -30px;
   background: url(../images/icons/button2.svg);
   transform: scale(-1, 1);
   background-position-x: -8px;
   background-position-y: -5px;
 }
 
+// --------------------------
 
-    // --------------------------
-
-
-.backgraund{
-    background-color: $gray-bg;
+.backgraund {
+  background-color: $gray-bg;
 }
 
-.search{
-    &-items{
+.search {
+  &-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &-text {
+      &__taitle {
+        font-family: "Poppins";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 64px; /* 177.778% */
+        letter-spacing: 2.88px;
+        color: #3f4255;
+        padding-bottom: 24px;
+      }
+      &__subtaitle {
+        font-family: "Martel Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.5px;
+        color: #3f4255;
+      }
+    }
+    &-form {
+      display: flex;
+      column-gap: 4px;
+      &:active,
+      :hover,
+      :focus {
+        outline: 0;
+        outline-offset: 0;
+      }
+      &__string {
+        position: relative;
         display: flex;
-        justify-content: space-around;
+        width: 336px;
+        height: 72px;
+        padding: 24px 16px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: none;
+        box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+        color: $gray-second;
+        background-image: url(../images/icons/location.svg);
+        background-repeat: no-repeat;
+        background-position-x: 13px;
+        background-position-y: 25px;
+        &:focus,
+        :active {
+          background-image: none;
+        }
+      }
+      &__btn {
+        display: inline-flex;
+        height: 72px;
+        padding: 28px 24px;
         align-items: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        &-text{
-            &__taitle{
-                font-family: 'Poppins';
-                font-size: 36px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 64px; /* 177.778% */
-                letter-spacing: 2.88px;
-                color: #3F4255;
-                padding-bottom: 24px;
-            }
-            &__subtaitle{
-                font-family: 'Martel Sans';
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 24px; /* 150% */
-                letter-spacing: 0.5px;
-                color: #3F4255;
-            }
+        gap: 10px;
+        flex-shrink: 0;
+        background-color: #ffe145;
+        border: none;
+        border-radius: 4px;
+        color: $yellowd-cr;
+        &:hover {
+          background-color: #fff7cc;
+          color: #ffe145;
+          transition: all 0.3s;
         }
-        &-form{
-            display: flex;
-            column-gap: 4px;
-            &:active, :hover, :focus {
-                    outline: 0;
-                    outline-offset: 0;
-                }
-            &__string{
-                position: relative;
-                display: flex;
-                width: 336px;
-                height: 72px;
-                padding: 24px 16px;
-                justify-content: center;
-                align-items: flex-start;
-                gap: 8px;
-                flex-shrink: 0;
-                border-radius: 6px;
-                border: none;
-                box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
-                color: $gray-second;
-                background-image: url(../images/icons/location.svg);
-                background-repeat: no-repeat;
-                background-position-x: 13px;
-                background-position-y: 25px;
-                &:focus, :active{
-                    background-image: none;
-                }
-            }
-            &__btn{
-                display: inline-flex;
-                height: 72px;
-                padding: 28px 24px;
-                align-items: center;
-                gap: 10px;
-                flex-shrink: 0;
-                background-color: #FFE145;
-                border: none;
-                border-radius: 4px;
-                color: $yellowd-cr;
-                &:hover{
-                    background-color: #FFF7CC;
-                    color: #FFE145;
-                    transition: all .3s;
-                }
-            }
-        }
+      }
     }
+  }
 }
 
-.specialities{
-    margin-top: 72px;
-    margin-bottom: 72px;
-    &-head{
-        display: flex;
-        justify-content: space-between;
+.specialities {
+  margin-top: 72px;
+  margin-bottom: 72px;
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      color: $gray-dark;
+      font-family: "Poppins";
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 64px;
+      letter-spacing: 2.88px;
+      padding-bottom: 48px;
+    }
+    &__btn {
+      width: 120px;
+      height: 48px;
+      padding: 15px 5px;
+      align-items: center;
+      background-color: $gray-bg;
+      font-family: "Martel Sans";
+      font-size: 16px;
+      font-weight: 700;
+      color: $gray-second;
+      border-radius: 4px;
+    }
+  }
+  &-body {
+    &-slyder {
+      .slick-next,
+      .slick-next:hover,
+      .slick-next:focus {
+        top: 40px;
+        right: -30px;
+        background: url(../images/icons/button2.svg);
+        transform: scale(-1, 1);
+        background-position-x: -8px;
+        background-position-y: -5px;
+      }
+      &__item {
         align-items: center;
-        &__title{
-            color: $gray-dark;
-            font-family: 'Poppins';
-            font-size: 36px;
-            font-weight: 300;
-            line-height: 64px;
-            letter-spacing: 2.88px;
-            padding-bottom: 48px;
+        width: 136px;
+        height: 136px;
+        box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
+        img {
+          width: 48px;
+          height: 48px;
+          margin: auto;
         }
-        &__btn{
-            width: 120px;
-            height: 48px;
-            padding: 15px 5px;
-            align-items: center;
-            background-color: $gray-bg;
-            font-family: 'Martel Sans';
-            font-size: 16px;
-            font-weight: 700;
-            color: $gray-second;
-            border-radius: 4px;
+        p {
+          text-align: center;
+          padding-top: 16px;
         }
+      }
     }
-    &-body{
-        &-slyder{
-            .slick-next,.slick-next:hover,.slick-next:focus {
-                top: 40px;
-                right: -30px;
-              background: url(../images/icons/button2.svg);
-              transform: scale(-1, 1);
-              background-position-x: -8px;
-              background-position-y: -5px;
-            }
-            &__item{
-                align-items: center;
-                width: 136px;
-                height: 136px;
-                box-shadow: 0px 2px 16px 0px rgba(60, 62, 74, 0.08);
-                img{
-                    width: 48px;
-                    height: 48px;
-                    margin: auto;
-                }
-                p{
-                    text-align: center;
-                    padding-top: 16px;
-                }
-            }
-        }
-    }
+  }
 }
-.padding{
-    height: 24px;
+.padding {
+  height: 24px;
 }
 
 // -------------------------------------------------
 
-.about-us{
-    width: 1440px;
-    height: 284px;
-    margin-bottom: 72px;
-    background-image: url(../images/content/bg.png);
-    &-items{
-        padding-top: 79px;
-        width: 808px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        &__item{
-            width: 126px;
-            height: 126px;
-            border-radius: 50%;
-            background-color: #FFE145;
-            position: relative;
-            &::after{
-                content:"";
-                position: absolute;
-                width: 126px;
-                height: 126px;
-                border: #B79C10 2px solid;
-                border-radius: 50%;
-                top: -23px;
-            }
-            &::before{
-                content: "1";
-                position: absolute;
-                font-family: "Open Sans";
-                font-size: 58px;
-                font-style: normal;
-                color: #3F4255;
-                font-weight: 700;
-                line-height: 64px; /* 110.345% */
-                letter-spacing: 2.9px;
-                right: 45px;
-                top: 13px;
-            }
-        }
-            &__item1{
-                width: 126px;
-                height: 126px;
-                border-radius: 50%;
-                background-color: #FFE145;
-                position: relative;
-                &::after{
-                    content:"";
-                    position: absolute;
-                    width: 126px;
-                    height: 126px;
-                    border: #B79C10 2px solid;
-                    border-radius: 50%;
-                    top: -23px;
-                }
-                &::before{
-                    content: "11";
-                    position: absolute;
-                    font-family: "Open Sans";
-                    font-size: 58px;
-                    font-style: normal;
-                    color: #3F4255;
-                    font-weight: 700;
-                    line-height: 64px; /* 110.345% */
-                    letter-spacing: 2.9px;
-                    right: 30px;
-                    top: 13px;
-                }
-            }
-        
-    }
-}
-
-.map{
+.about-us {
+  width: 1440px;
+  height: 284px;
+  margin-bottom: 72px;
+  background-image: url(../images/content/bg.png);
+  &-items {
+    padding-top: 79px;
+    width: 808px;
     margin: auto;
-    margin-bottom: 72px;
-    width: 1280px;
-    height: 600px;
-    background-image: url(../images/content/Mapsicle\ Map.jpg);
-    position: relative;
-    .vector1{
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      background-color: #ffe145;
+      position: relative;
+      &::after {
         content: "";
         position: absolute;
-        background-image: url(../images/vectors/Vector\ 1.svg);
-        bottom: 147.5px;
-        right: 575px;
-        width: 228.5px;
-        height: 164.5px;
-        mix-blend-mode: multiply;
+        width: 126px;
+        height: 126px;
+        border: #b79c10 2px solid;
+        border-radius: 50%;
+        top: -23px;
+      }
+      &::before {
+        content: "1";
+        position: absolute;
+        font-family: "Open Sans";
+        font-size: 58px;
+        font-style: normal;
+        color: #3f4255;
+        font-weight: 700;
+        line-height: 64px; /* 110.345% */
+        letter-spacing: 2.9px;
+        right: 45px;
+        top: 13px;
+      }
     }
-    .vector2{
+    &__item1 {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      background-color: #ffe145;
+      position: relative;
+      &::after {
         content: "";
         position: absolute;
-        background-image: url(../images/vectors/Vector\ 2.svg);
-        top: 156px;
-        right: 515px;
-        width: 358.05px;
-        height: 254.5px;
-        mix-blend-mode: multiply;
-    }
-    .vector3{
-        content: "";
+        width: 126px;
+        height: 126px;
+        border: #b79c10 2px solid;
+        border-radius: 50%;
+        top: -23px;
+      }
+      &::before {
+        content: "11";
         position: absolute;
-        background-image: url(../images/vectors/Vector\ 3.svg);
-        top: 68px;
-        right: 645.5px;
-        width: 235.5px;
-        height: 164px;
-        mix-blend-mode: multiply;
+        font-family: "Open Sans";
+        font-size: 58px;
+        font-style: normal;
+        color: #3f4255;
+        font-weight: 700;
+        line-height: 64px; /* 110.345% */
+        letter-spacing: 2.9px;
+        right: 30px;
+        top: 13px;
+      }
     }
-    .vector4{
-        content: "";
-        position: absolute;
-        background-image: url(../images/vectors/Vector\ 4.svg);
-        top: 70.5px;
-        right: 526.5px;
-        width: 117.5px;
-        height: 85.5px;
-        mix-blend-mode: multiply;
-    }
-    .vector5{
-        content: "";
-        position: absolute;
-        background-image: url(../images/vectors/Vector\ 5.svg);
-        top: 208.5px;
-        right: 826.5px;
-        width: 124.5px;
-        height: 130.5px;
-        mix-blend-mode: multiply;
-    }
-    .vector6{
-        content: "";
-        position: absolute;
-        background-image: url(../images/vectors/Vector\ 6.svg);
-        bottom: 172.5px;
-        left: 326.5px;
-        width: 85px;
-        height: 86.5px;
-        mix-blend-mode: multiply;
-    }
-    .vector7{
-        content: "";
-        position: absolute;
-        background-image: url(../images/vectors/Vector\ 7.svg);
-        bottom: 215px;
-        left: 397.8px;
-        width: 26.6px;
-        height: 43px;
-        mix-blend-mode: multiply;
-    }
-    .vector8{
-        content: "";
-        position: absolute;
-        background-image: url(../images/vectors/Vector\ 8.svg);
-        bottom: 191.5px;
-        left: 434px;
-        width: 96px;
-        height: 90px;
-        mix-blend-mode: multiply;
-    }
-
-    .loc1{
-        position: absolute;
-        top: 80px;
-        right: 539px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc2{
-        position: absolute;
-        top: 120px;
-        right: 764px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc3{
-        position: absolute;
-        top: 159px;
-        right: 683px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc4{
-        position: absolute;
-        top: 216px;
-        right: 594px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc5{
-        position: absolute;
-        top: 232px;
-        right: 731px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc6{
-        position: absolute;
-        top: 223px;
-        right: 855px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc7{
-        position: absolute;
-        top: 339px;
-        right: 546px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
-    .loc8{
-        position: absolute;
-        top: 375px;
-        right: 659px;
-        &:hover{
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            transition: all .5;
-        }
-    }
+  }
 }
 
-.instagram{
-    &__title{
-        color: $gray-dark;
-        font-family: 'Poppins';
-        font-size: 36px;
-        font-weight: 300;
-        line-height: 64px;
-        letter-spacing: 2.88px;
-        padding-bottom: 21px;
-        span{
-            color:  #9093A6;
-            font-family: 'Poppins';
-            font-size: 36px;
+.map {
+  margin: auto;
+  margin-bottom: 72px;
+  width: 1280px;
+  height: 600px;
+  background-image: url(../images/content/Mapsicle\ Map.jpg);
+  position: relative;
+  .vector1 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 1.svg);
+    bottom: 147.5px;
+    right: 575px;
+    width: 228.5px;
+    height: 164.5px;
+    mix-blend-mode: multiply;
+  }
+  .vector2 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 2.svg);
+    top: 156px;
+    right: 515px;
+    width: 358.05px;
+    height: 254.5px;
+    mix-blend-mode: multiply;
+  }
+  .vector3 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 3.svg);
+    top: 68px;
+    right: 645.5px;
+    width: 235.5px;
+    height: 164px;
+    mix-blend-mode: multiply;
+  }
+  .vector4 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 4.svg);
+    top: 70.5px;
+    right: 526.5px;
+    width: 117.5px;
+    height: 85.5px;
+    mix-blend-mode: multiply;
+  }
+  .vector5 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 5.svg);
+    top: 208.5px;
+    right: 826.5px;
+    width: 124.5px;
+    height: 130.5px;
+    mix-blend-mode: multiply;
+  }
+  .vector6 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 6.svg);
+    bottom: 172.5px;
+    left: 326.5px;
+    width: 85px;
+    height: 86.5px;
+    mix-blend-mode: multiply;
+  }
+  .vector7 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 7.svg);
+    bottom: 215px;
+    left: 397.8px;
+    width: 26.6px;
+    height: 43px;
+    mix-blend-mode: multiply;
+  }
+  .vector8 {
+    content: "";
+    position: absolute;
+    background-image: url(../images/vectors/Vector\ 8.svg);
+    bottom: 191.5px;
+    left: 434px;
+    width: 96px;
+    height: 90px;
+    mix-blend-mode: multiply;
+  }
+
+  .loc1 {
+    position: absolute;
+    top: 80px;
+    right: 539px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc2 {
+    position: absolute;
+    top: 120px;
+    right: 764px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc3 {
+    position: absolute;
+    top: 159px;
+    right: 683px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc4 {
+    position: absolute;
+    top: 216px;
+    right: 594px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc5 {
+    position: absolute;
+    top: 232px;
+    right: 731px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc6 {
+    position: absolute;
+    top: 223px;
+    right: 855px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc7 {
+    position: absolute;
+    top: 339px;
+    right: 546px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+  .loc8 {
+    position: absolute;
+    top: 375px;
+    right: 659px;
+    &:hover {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: all 0.5;
+    }
+  }
+}
+
+.instagram {
+  &__title {
+    color: $gray-dark;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: 2.88px;
+    padding-bottom: 21px;
+    span {
+      color: #9093a6;
+      font-family: "Poppins";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 64px;
+      letter-spacing: 2.88px;
+    }
+  }
+  &-images {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  margin-top: 72px;
+  &-head {
+    padding-top: 48px;
+    display: flex;
+    column-gap: 184px;
+  }
+  .bg-dark {
+    background-color: #3f4255 !important;
+  }
+  &-app {
+    width: 296px;
+    height: 149.5px;
+    &__logo-img {
+      width: 184px;
+      height: auto;
+    }
+    &__hr {
+      color: #d4d7e5;
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+  }
+  &-list {
+    display: flex;
+    column-gap: 85px;
+    &__item {
+      p {
+        padding-bottom: 20px;
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+      }
+      ul {
+        padding-left: 0px;
+        li {
+          padding-bottom: 13px;
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-family: "Martel Sans";
+            font-size: 16px;
             font-style: normal;
-            font-weight: 300;
-            line-height: 64px;
-            letter-spacing: 2.88px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: #fff;
+            &:hover {
+              color: #ffe145;
+              cursor: pointer;
+              transition: all 0.3s;
+            }
+          }
         }
+      }
     }
-    &-images{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.footer{
-    margin-top: 72px;
-    &-head{
-        padding-top: 48px;
-        display: flex;
-        column-gap: 184px;
-    }
-    .bg-dark{
-        background-color: #3F4255 !important;
-    }
-    &-app{
-        width: 296px;
-        height: 149.5px;
-        &__logo-img{
-            width: 184px;
-            height: auto;
+  }
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 104px;
+    padding-bottom: 55px;
+    &-images {
+      &__x {
+        width: 43px;
+        &:hover {
+          fill: #ffe145;
+          cursor: pointer;
+          transition: all 0.3s;
         }
-        &__hr{
-            color: #D4D7E5;
-            margin-top: 48px;
-            margin-bottom: 48px;
+      }
+      &__insta {
+        &:hover {
+          fill: #ffe145;
+          cursor: pointer;
+          transition: all 0.3s;
         }
+      }
+      &__facebook {
+        &:hover {
+          fill: #ffe145;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+      }
     }
-    &-list{
-        display: flex;
-        column-gap: 85px;
-        &__item{
-            p{
-                padding-bottom: 20px;
-                color:#FFF;
-                font-family: 'Poppins';
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 32px;
-            }
-            ul{
-                padding-left: 0px;
-                li{
-                    padding-bottom: 13px;
-                    list-style: none;
-                    a{
-                        text-decoration: none;
-                        font-family: 'Martel Sans';
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 20px;
-                        letter-spacing: 0.5px;
-                        color: #fff;
-                        &:hover{
-                            color: #FFE145;
-                            cursor: pointer;
-                            transition: all .3s;
-                        }
-                    }
-                }
-            }
+    &-text {
+      display: flex;
+      column-gap: 54px;
+      p {
+        color: #fff;
+        font-family: "Martel Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 16px;
+        &:hover {
+          color: #ffe145;
+          cursor: pointer;
+          transition: all 0.3s;
         }
+      }
+      span {
+        color: #fff;
+        font-family: "Martel Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
     }
-    &-body{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 104px;
-        padding-bottom: 55px;
-        &-images{
-            &__x{
-                width: 43px;
-                &:hover{
-                    fill: #FFE145;
-                    cursor: pointer;
-                    transition: all .3s;
-                } 
-            }
-            &__insta{
-            &:hover{
-                fill: #FFE145;
-                cursor: pointer;
-                transition: all .3s;
-            } 
-            }
-            &__facebook{
-                &:hover{
-                    fill: #FFE145;
-                    cursor: pointer;
-                    transition: all .3s;
-                }  
-            }
-            
-        }
-        &-text{
-            display: flex;
-            column-gap: 54px;
-            p{
-                color: #fff;
-                font-family: 'Martel Sans';
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 800;
-                line-height: 16px;
-                &:hover{
-                    color: #FFE145;
-                    cursor: pointer;
-                    transition: all .3s;
-                }
-            }
-            span{
-                color: #fff;
-                font-family: 'Martel Sans';
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 16px;
-            }
-        }
-    }
+  }
 }

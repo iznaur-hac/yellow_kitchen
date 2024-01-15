@@ -1,375 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yellowkitchen</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&family=Open+Sans:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&family=Open+Sans:wght@700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav class="nav-menu">
-                <img class="nav-menu__img" src="images/logo/Logo.png" alt="logo">
-                <div class="nav-menu-items">
-                    <div class="nav-menu-items-login">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                        <p class="nav-menu-items-login__text">Log in</p>
-                    </div>
-                    <div class="nav-menu-items-cart">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
-                        <p class="nav-menu-items-cart__text">0</p>
-                    </div>
-                    <button class="btn btn-primary bg-white border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <img src="images/icons/initial.svg" alt="">
-                    </button>
+      <div class="container">
+        <nav class="nav-menu">
+          <img class="nav-menu__img" src="images/logo/Logo.png" alt="logo" />
+          <div class="nav-menu-items">
+            <div class="nav-menu-items-login">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+              </svg>
+              <p class="nav-menu-items-login__text">Log in</p>
+            </div>
+            <div class="nav-menu-items-cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24">
+                <path
+                  d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+              </svg>
+              <p class="nav-menu-items-cart__text">0</p>
+            </div>
+            <button
+              class="btn btn-primary bg-white border-white"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <img src="images/icons/initial.svg" alt="" />
+            </button>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                      <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                            <img class="offcanvas-img" src="images/icons/call.svg" alt="">
-                            <span>0800 111 126</span>
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-                      </div>
-                      <div class="offcanvas-subtitle"><p>8:00 - 22:00</p></div>
-                      <div class="offcanvas-body">
-                        <ul>
-                            <li class="offcanvas-li"><a class="offcanvas-a" href="#">Delivery info</a></li>
-                            <li class="offcanvas-li"><a class="offcanvas-a" href="#">About us</a></li>
-                            <li class="offcanvas-li"><a class="offcanvas-a" href="#">Restaurants</a></li>
-                            <li class="offcanvas-li"><a class="offcanvas-a" href="#">Specialities</a></li>
-                        </ul>
-                      </div>
-                    </div>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                  <img
+                    class="offcanvas-img"
+                    src="images/icons/call.svg"
+                    alt="" />
+                  <span>0800 111 126</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Закрыть"></button>
+              </div>
+              <div class="offcanvas-subtitle"><p>8:00 - 22:00</p></div>
+              <div class="offcanvas-body">
+                <ul>
+                  <li class="offcanvas-li">
+                    <a class="offcanvas-a" href="#">Delivery info</a>
+                  </li>
+                  <li class="offcanvas-li">
+                    <a class="offcanvas-a" href="#">About us</a>
+                  </li>
+                  <li class="offcanvas-li">
+                    <a class="offcanvas-a" href="#">Restaurants</a>
+                  </li>
+                  <li class="offcanvas-li">
+                    <a class="offcanvas-a" href="#">Specialities</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <hr class="nav-hr" />
+      <main>
+        <div class="container">
+          <div class="main-box">
+            <div class="main-head">
+              <p class="main-box__title">
+                Your Food court <br />
+                at home
+              </p>
+              <div class="main-box-items">
+                <div class="main-box-items__item1">
+                  <p>Delivery</p>
+                  <span>Order in</span>
                 </div>
-            </nav>
+                <div class="main-box-items__item2">
+                  <p>Takeout</p>
+                  <span>Grab and go</span>
+                </div>
+              </div>
+            </div>
+
+            <img src="images/content/Photo.png" alt="main-image" />
+          </div>
         </div>
-        <hr class="nav-hr">
-        <main>
-            <div class="container">
-                <div class="main-box">
-                    <div class="main-head">
-                        <p class="main-box__title">Your Food court <br> at home </p>
-                        <div class="main-box-items">
-                        <div class="main-box-items__item1">
-                            <p>Delivery </p>
-                            <span>Order in</span>
-                        </div>
-                        <div class="main-box-items__item2">
-                            <p>Takeout</p>
-                            <span>Grab and go</span>
-                        </div>
-                    </div>
-                    </div>
-                    
-                    <img src="images/content/Photo.png" alt="main-image">
-                </div>
+        <div class="main-block">
+          <div class="main-block-items">
+            <div class="main-block-items__item">
+              <img src="images/icons/time-eat.svg" alt="time-eat" />
+              <p>
+                delivery in all paris <br />
+                in less than 30 minutes
+              </p>
             </div>
-            <div class="main-block">
-                <div class="main-block-items">
-                    <div class="main-block-items__item">
-                        <img src="images/icons/time-eat.svg" alt="time-eat">
-                        <p>delivery in all paris <br> in less than 30 minutes</p>
-                    </div>
-                    <div class="main-block-items__item">
-                        <img src="images/icons/delivery.svg" alt="time-eat">
-                        <p>Free delivery <br> from 29 euros</p>
-                    </div>
-                    <div class="main-block-items__item">
-                        <img src="images/icons/paris.svg" alt="time-eat">
-                        <p>Only fresh <br> and French products</p>
-                    </div>
-                </div>
+            <div class="main-block-items__item">
+              <img src="images/icons/delivery.svg" alt="time-eat" />
+              <p>
+                Free delivery <br />
+                from 29 euros
+              </p>
             </div>
-        </main>
+            <div class="main-block-items__item">
+              <img src="images/icons/paris.svg" alt="time-eat" />
+              <p>
+                Only fresh <br />
+                and French products
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
     </header>
     <section class="restaurants-block">
-        <div class="container">
-            <div class="restaurants">
-                <div class="restaurants-head">
-                    <p class="restaurants-head__title">Restaurants</p>
-                    <button class="restaurants-head__btn" disabled>show all</button>
+      <div class="container">
+        <div class="restaurants">
+          <div class="restaurants-head">
+            <p class="restaurants-head__title">Restaurants</p>
+            <button class="restaurants-head__btn" disabled>show all</button>
+          </div>
+          <div class="restaurants-body">
+            <div class="responsive">
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base.jpg" alt="" />
+                  <img src="images/logo/burger.png" alt="" />
                 </div>
-                <div class="restaurants-body">
-
-                    <div class="responsive">
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base.jpg" alt="">
-                                <img src="images/logo/burger.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base2.jpg" alt="">
-                                <img src="images/logo/il_paster.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base3.jpg" alt="">
-                                <img src="images/logo/Believe.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base4.jpg" alt="">
-                                <img src="images/logo/vietnamese.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base.jpg" alt="">
-                                <img src="images/logo/burger.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base2.jpg" alt="">
-                                <img src="images/logo/il_paster.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base3.jpg" alt="">
-                                <img src="images/logo/Believe.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="restaurants__item">
-                                <img src="images/content/Photo-base4.jpg" alt="">
-                                <img src="images/logo/vietnamese.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base2.jpg" alt="" />
+                  <img src="images/logo/il_paster.png" alt="" />
                 </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base3.jpg" alt="" />
+                  <img src="images/logo/Believe.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base4.jpg" alt="" />
+                  <img src="images/logo/vietnamese.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base.jpg" alt="" />
+                  <img src="images/logo/burger.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base2.jpg" alt="" />
+                  <img src="images/logo/il_paster.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base3.jpg" alt="" />
+                  <img src="images/logo/Believe.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <div class="restaurants__item">
+                  <img src="images/content/Photo-base4.jpg" alt="" />
+                  <img src="images/logo/vietnamese.png" alt="" />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="search">
-        <div class="backgraund">
-            <div class="container">
-                <div class="search-items">
-                    <div class="search-items-text">
-                        <p class="search-items-text__taitle">Your nearest restaurants</p>
-                        <p class="search-items-text__subtaitle">Each kitchen works with its own delivery area to <br>deliver food to you as soon as possible</p>
-                    </div>
-                    <div class="search-items-form">
-                        <input type="text" class="search-items-form__string" placeholder="     Enter delivery address">
-                        <button class="search-items-form__btn">send</button>
-                    </div>
-                </div>
+      <div class="backgraund">
+        <div class="container">
+          <div class="search-items">
+            <div class="search-items-text">
+              <p class="search-items-text__taitle">Your nearest restaurants</p>
+              <p class="search-items-text__subtaitle">
+                Each kitchen works with its own delivery area to <br />deliver
+                food to you as soon as possible
+              </p>
             </div>
+            <div class="search-items-form">
+              <input
+                type="text"
+                class="search-items-form__string"
+                placeholder="     Enter delivery address" />
+              <button class="search-items-form__btn">send</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="specialities">
-        <div class="container">
-            <div class="specialities-head">
-                <p class="specialities-head__title">Specialities</p>
-                <button class="specialities-head__btn" disabled>show all</button>
-            </div>
-            <div class="specialities-body">
-
-                <div class="specialities-body-slyder">
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/bagel.svg" alt="bagel">
-                            <p>bagel</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/burger.svg" alt="burger">
-                            <p>burger</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/chicken.svg" alt="chicken">
-                            <p>chicken</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/fish.svg" alt="fish">
-                            <p>fish</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/fishnchips.svg" alt="fishnchips">
-                            <p>Fish`Chips</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/vegan.svg" alt="vegan">
-                            <p>Salads</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/pizza.svg" alt="pizza">
-                            <p>Pizza</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/raviolli.svg" alt="pasta">
-                            <p>Pasta</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="specialities-body-slyder__item">
-                            <div class="padding"></div>
-                            <img src="images/icons/slyder-svg/fish.svg" alt="fish">
-                            <p>Fish</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="specialities-head">
+          <p class="specialities-head__title">Specialities</p>
+          <button class="specialities-head__btn" disabled>show all</button>
         </div>
+        <div class="specialities-body">
+          <div class="specialities-body-slyder">
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/bagel.svg" alt="bagel" />
+                <p>bagel</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/burger.svg" alt="burger" />
+                <p>burger</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/chicken.svg" alt="chicken" />
+                <p>chicken</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/fish.svg" alt="fish" />
+                <p>fish</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img
+                  src="images/icons/slyder-svg/fishnchips.svg"
+                  alt="fishnchips" />
+                <p>Fish`Chips</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/vegan.svg" alt="vegan" />
+                <p>Salads</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/pizza.svg" alt="pizza" />
+                <p>Pizza</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/raviolli.svg" alt="pasta" />
+                <p>Pasta</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialities-body-slyder__item">
+                <div class="padding"></div>
+                <img src="images/icons/slyder-svg/fish.svg" alt="fish" />
+                <p>Fish</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="about-us">
-        <div class="about-us-items">
-            <div class="about-us-items__item"></div>
-            <div class="about-us-items__item1"></div>
-            <div class="about-us-items__item1"></div>
-            <div class="about-us-items__item"></div>
-        </div>
+    <section class="about-us me-container">
+      <div class="about-us-items">
+        <div class="about-us-items__item"></div>
+        <div class="about-us-items__item1"></div>
+        <div class="about-us-items__item1"></div>
+        <div class="about-us-items__item"></div>
+      </div>
     </section>
     <section class="map">
-        <img class="vector1" src="images/vectors/Vector 1.svg" alt="">
-        <img class="vector2" src="images/vectors/Vector 2.svg" alt="">
-        <img class="vector3" src="images/vectors/Vector 3.svg" alt="">
-        <img class="vector4" src="images/vectors/Vector 4.svg" alt="">
-        <img class="vector5" src="images/vectors/Vector 5.svg" alt="">
-        <img class="vector6" src="images/vectors/Vector 6.svg" alt="">
-        <img class="vector7" src="images/vectors/Vector 7.svg" alt="">
-        <img class="vector8" src="images/vectors/Vector 8.svg" alt="">
+      <img class="vector1" src="images/vectors/Vector 1.svg" alt="" />
+      <img class="vector2" src="images/vectors/Vector 2.svg" alt="" />
+      <img class="vector3" src="images/vectors/Vector 3.svg" alt="" />
+      <img class="vector4" src="images/vectors/Vector 4.svg" alt="" />
+      <img class="vector5" src="images/vectors/Vector 5.svg" alt="" />
+      <img class="vector6" src="images/vectors/Vector 6.svg" alt="" />
+      <img class="vector7" src="images/vectors/Vector 7.svg" alt="" />
+      <img class="vector8" src="images/vectors/Vector 8.svg" alt="" />
 
-        <img class="loc1" src="images/icons/loc.svg" alt="loc">
-        <img class="loc2" src="images/icons/loc.svg" alt="loc">
-        <img class="loc3" src="images/icons/loc.svg" alt="loc">
-        <img class="loc4" src="images/icons/loc.svg" alt="loc">
-        <img class="loc5" src="images/icons/loc.svg" alt="loc">
-        <img class="loc6" src="images/icons/loc.svg" alt="loc">
-        <img class="loc7" src="images/icons/loc.svg" alt="loc">
-        <img class="loc8" src="images/icons/loc.svg" alt="loc">
+      <img class="loc1" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc2" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc3" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc4" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc5" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc6" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc7" src="images/icons/loc.svg" alt="loc" />
+      <img class="loc8" src="images/icons/loc.svg" alt="loc" />
     </section>
     <section class="instagram">
-        <div class="container">
-            <p class="instagram__title">#YellowKitchens <span>in instagram</span></p>
-            <div class="instagram-images">
-                <img src="images/content/Rectangle 10.jpg" alt="">
-                <img src="images/content/Rectangle 11.jpg" alt="">
-                <img src="images/content/Rectangle 12.jpg" alt="">
-                <img src="images/content/Rectangle 13.jpg" alt="">
-            </div>
+      <div class="container">
+        <p class="instagram__title">
+          #YellowKitchens <span>in instagram</span>
+        </p>
+        <div class="instagram-images">
+          <img src="images/content/Rectangle 10.jpg" alt="" />
+          <img src="images/content/Rectangle 11.jpg" alt="" />
+          <img src="images/content/Rectangle 12.jpg" alt="" />
+          <img src="images/content/Rectangle 13.jpg" alt="" />
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="bg-dark">
-            <div class="container">
-                <div class="footer-head">
-                    <div class="footer-app">
-                        <img class="footer-app__logo-img" src="images/logo/Logo1.png" alt="">
-                        <hr class="footer-app__hr">
-                        <img src="images/logo/app-img1-1.png" alt="">
-                        <img src="images/logo/app-img2-1.png" alt="">
-                    </div>
-                    <div class="footer-list">
-                        <div class="footer-list__item">
-                            <p>About us</p>
-                            <ul>
-                                <li><a href="">Concept</a></li>
-                                <li><a href="">Franchise</a></li>
-                                <li><a href="">Business</a></li>
-                                <li><a href="">Restaurant signup</a></li>
-                                <li><a href="">For Investors</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-list__item">
-                            <p>Get help</p>
-                            <ul>
-                                <li><a href="">Read FAQs</a></li>
-                                <li><a href="">Restaurants</a></li>
-                                <li><a href="">Specialities</a></li>
-                                <li><a href="">Sign up to deliver</a></li>
-                                <li><a href="">English</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-list__item">
-                            <p>Contact us</p>
-                            <ul>
-                                <li><a href="">Yellow kitchen Paris 11</a></li>
-                                <li><a href="">69 avenue de la Republique 75011 <br>Paris</a></li>
-                                <li><a href="">0800 111 126</a></li>
-                                <li><a href="">contact@yellowkitchens.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-body">
-                    <div class="footer-body-images">
-
-                        <?xml version="1.0"?><svg class="footer-body-images__insta" xmlns="http://www.w3.org/2000/svg" fill='#fff' viewBox="0 0 30 30" width="30px" height="30px">
-                            <style type="text/css">
-                                .st0{stroke:#3F4255;stroke-miterlimit:10;}
-                                .st1{fill:#3F4255;}
-                            </style>
-                            <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg>
-
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <svg class="footer-body-images__x" version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" fill="#fff"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19 "
-                                 style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
-                            <style type="text/css">
-                                .st0{stroke:#3F4255;stroke-miterlimit:10;}
-                                .st1{fill:#3F4255;}
-                            </style>
-                            <g>
-                                <circle class="st0" cx="834.28" cy="610.6" r="481.33"/>
-                                <g id="layer1" transform="translate(52.390088,-25.058597)">
-                                    <path id="path1009" class="st1" d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
-                                        L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
-                                        z"/>
-                                </g>
-                            </g>
-                            </svg>
-
-                            <?xml version="1.0"?><svg class="footer-body-images__facebook" xmlns="http://www.w3.org/2000/svg" fill='#fff'  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z"/></svg>
-
-                    </div>
-                    <div class="footer-body-text">
-                        <p>Privacy Policy</p>
-                        <p>Terms</p>
-                        <span>© 2020 Yellow kitchen</span>
-                    </div>
-                </div>
+      <div class="bg-dark">
+        <div class="container">
+          <div class="footer-head">
+            <div class="footer-app">
+              <img
+                class="footer-app__logo-img"
+                src="images/logo/Logo1.png"
+                alt="" />
+              <hr class="footer-app__hr" />
+              <img src="images/logo/app-img1-1.png" alt="" />
+              <img src="images/logo/app-img2-1.png" alt="" />
             </div>
+            <div class="footer-list">
+              <div class="footer-list__item">
+                <p>About us</p>
+                <ul>
+                  <li><a href="">Concept</a></li>
+                  <li><a href="">Franchise</a></li>
+                  <li><a href="">Business</a></li>
+                  <li><a href="">Restaurant signup</a></li>
+                  <li><a href="">For Investors</a></li>
+                </ul>
+              </div>
+              <div class="footer-list__item">
+                <p>Get help</p>
+                <ul>
+                  <li><a href="">Read FAQs</a></li>
+                  <li><a href="">Restaurants</a></li>
+                  <li><a href="">Specialities</a></li>
+                  <li><a href="">Sign up to deliver</a></li>
+                  <li><a href="">English</a></li>
+                </ul>
+              </div>
+              <div class="footer-list__item">
+                <p>Contact us</p>
+                <ul>
+                  <li><a href="">Yellow kitchen Paris 11</a></li>
+                  <li>
+                    <a href="">69 avenue de la Republique 75011 <br />Paris</a>
+                  </li>
+                  <li><a href="">0800 111 126</a></li>
+                  <li><a href="">contact@yellowkitchens.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-body">
+            <div class="footer-body-images">
+              <?xml version="1.0"?><svg
+                class="footer-body-images__insta"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px">
+                <style type="text/css">
+                  .st0 {
+                    stroke: #3f4255;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: #3f4255;
+                  }
+                </style>
+                <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" />
+              </svg>
+
+              <?xml version="1.0" encoding="utf-8"?>
+              <svg
+                class="footer-body-images__x"
+                version="1.1"
+                id="svg5"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                fill="#fff"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 1668.56 1221.19 "
+                style="enable-background: new 0 0 1668.56 1221.19"
+                xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    stroke: #3f4255;
+                    stroke-miterlimit: 10;
+                  }
+                  .st1 {
+                    fill: #3f4255;
+                  }
+                </style>
+                <g>
+                  <circle class="st0" cx="834.28" cy="610.6" r="481.33" />
+                  <g id="layer1" transform="translate(52.390088,-25.058597)">
+                    <path
+                      id="path1009"
+                      class="st1"
+                      d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
+                                        L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
+                                        z" />
+                  </g>
+                </g>
+              </svg>
+
+              <?xml version="1.0"?><svg
+                class="footer-body-images__facebook"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px">
+                <path
+                  d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
+              </svg>
+            </div>
+            <div class="footer-body-text">
+              <p>Privacy Policy</p>
+              <p>Terms</p>
+              <span>© 2020 Yellow kitchen</span>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
